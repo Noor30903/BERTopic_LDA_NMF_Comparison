@@ -1,6 +1,4 @@
-# BERTopic_LDA_NMF_Comparison
-
-# Product Description Classification Using NMF, LDA & BERTopic
+# Product Description Classification Using Topic Modeling Models: NMF, LDA, BERTopic 
 
 This project explores the application of three advanced machine learning techniques—**Non-negative Matrix Factorization (NMF)**, **Latent Dirichlet Allocation (LDA)**, and **BERTopic**—to classify product descriptions into predefined categories. The goal of this project is to automatically categorize product descriptions and map them to specific zones based on their content, improving the organization and management of products in inventory systems.
 
@@ -9,7 +7,6 @@ This project explores the application of three advanced machine learning techniq
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
-- [Technologies Used](#technologies-used)
 - [Dataset Information](#dataset-information)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -42,25 +39,10 @@ This project combines three different topic modeling approaches: **NMF**, **LDA*
 
 ---
 
-## Technologies Used
-
-- **Python**: Programming language for implementation.
-- **NMF**: Used for extracting topics from the text data.
-- **LDA**: Latent Dirichlet Allocation for identifying topics in text data.
-- **BERTopic**: A state-of-the-art topic modeling algorithm based on transformer embeddings.
-- **Sentence-Transformers**: Used for generating sentence embeddings for BERTopic.
-- **UMAP**: Dimensionality reduction for visualizing topics in lower dimensions.
-- **KMeans**: Clustering model used in BERTopic for topic assignment.
-- **Gensim**: For LDA model training and topic extraction.
-- **NLTK**: Natural Language Toolkit for text preprocessing tasks.
-- **Scikit-learn**: For machine learning models, including Logistic Regression and model evaluation tools.
-- **Joblib**: For saving and loading trained models.
-
----
 
 ## Dataset Information
-
 We used a Big Amazon products dataset from [Amazon Reviews 2023](https://amazon-reviews-2023.github.io/) containing 8.5 million products with metadata like category, title, description, and price. For this project, we focused on the product description for topic modeling and the main category as the target. From five categories (home, beauty, electronics, food, and books), we randomly sampled 268,753 products, balanced with 50,000 products per category except for beauty, which included 68,753 products.
+
 ---
 
 ## Installation
@@ -71,14 +53,9 @@ We used a Big Amazon products dataset from [Amazon Reviews 2023](https://amazon-
     cd your-repo-name
     ```
 
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. Download the required datasets and place them in the `dataset/` directory.
 
-3. Download the required datasets and place them in the `dataset/` directory.
-
-4. Make sure you have a Python environment with the necessary libraries installed.
+3. Make sure you have a Python environment with the necessary libraries installed.
 
 ---
 
